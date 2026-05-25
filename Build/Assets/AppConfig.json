@@ -1,0 +1,14 @@
+{
+  "App Name": "Cubikki",
+  "App Major": 0,
+  "App Minor": 1,
+  "App Patch": 0,
+  "Icon Path": "Assets/Icon/Icon.png",
+  "Window": {
+    "Width": 960,
+    "Height": 1080,
+    "Title": "Cubikki",
+    "Fullscreen": false,
+    "Resizable": true
+  }
+}

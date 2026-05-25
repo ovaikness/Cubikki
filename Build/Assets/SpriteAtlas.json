@@ -1,0 +1,48 @@
+{"frames": [
+
+{
+	"filename": "FrameDark.png",
+	"frame": {"x":323,"y":1,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Inventory.png",
+	"frame": {"x":1,"y":1,"w":320,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":320,"h":128},
+	"sourceSize": {"w":320,"h":128},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "InventoryGrid.png",
+	"frame": {"x":1,"y":1,"w":320,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":320,"h":128},
+	"sourceSize": {"w":320,"h":128},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Slot.png",
+	"frame": {"x":453,"y":1,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SpriteAtlas.png",
+	"format": "RGBA8888",
+	"size": {"w":486,"h":130},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2484318f9d6c505458b7a2341b6adb07:892e1557dbee4ab474a07325be7e46bc:e946e5ed675fa05b9e1359c489ede58a$"
+}
+}

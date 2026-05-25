@@ -1,0 +1,12 @@
+{
+    "Player" : {
+        "class" : "ACharacter",
+        "components" : 
+        {
+            "script" : 
+            {
+                "file" : "Player.lua"
+            }
+        }
+    }
+}

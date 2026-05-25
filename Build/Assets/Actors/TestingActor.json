@@ -1,0 +1,4 @@
+{
+    "name": "TestingActor",
+    "scripts": ["TestScript.lua", "TestScript2.lua"]
+}

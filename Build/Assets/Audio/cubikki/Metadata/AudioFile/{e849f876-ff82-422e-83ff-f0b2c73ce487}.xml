@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e849f876-ff82-422e-83ff-f0b2c73ce487}">
+		<property name="assetPath">
+			<value>menu_button_unhovered.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.0710204081632653</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{83f306be-0d36-4ce7-9f87-1bc0f32e4548}</destination>
+		</relationship>
+	</object>
+</objects>
