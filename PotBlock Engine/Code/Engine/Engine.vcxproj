@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Cubikki_Client|Win32">
+      <Configuration>Cubikki_Client</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Cubikki_Client|x64">
+      <Configuration>Cubikki_Client</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Cubikki_Server|Win32">
+      <Configuration>Cubikki_Server</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Cubikki_Server|x64">
+      <Configuration>Cubikki_Server</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Audio\AudioListener.cpp" />
+    <ClCompile Include="Audio\AudioSystem.cpp" />
+    <ClCompile Include="Audio\ChannelGroup.cpp" />
+    <ClCompile Include="Audio\Sound.cpp" />
+    <ClCompile Include="Audio\SoundPlayback.cpp" />
+    <ClCompile Include="Core\DevConsole.cpp" />
+    <ClCompile Include="Core\EventDispatcher.cpp" />
+    <ClCompile Include="Core\GrowBuffer.cpp" />
+    <ClCompile Include="Core\HCIString.cpp" />
+    <ClCompile Include="Core\NamedProperties.cpp" />
+    <ClCompile Include="Core\StringUtils.cpp" />
+    <ClCompile Include="Graphics\BitmapFontSystem.cpp" />
+    <ClCompile Include="Graphics\Camera.cpp" />
+    <ClCompile Include="Graphics\CascadeShadowMap.cpp" />
+    <ClCompile Include="Graphics\DirectionalLight.cpp" />
+    <ClCompile Include="Graphics\GPUBuffer.cpp" />
+    <ClCompile Include="Graphics\Mesh.cpp" />
+    <ClCompile Include="Graphics\PipelineBuilder.cpp" />
+    <ClCompile Include="Graphics\Rgba8.cpp" />
+    <ClCompile Include="Graphics\Animation.cpp" />
+    <ClCompile Include="Graphics\TextureAtlas.cpp" />
+    <ClCompile Include="Graphics\UI\Canvas.cpp" />
+    <ClCompile Include="Graphics\UI\DevConsoleGUI.cpp" />
+    <ClCompile Include="Graphics\Painters\NineSlice.cpp" />
+    <ClCompile Include="Graphics\UI\ImagePanel.cpp" />
+    <ClCompile Include="Graphics\UI\Panel.cpp" />
+    <ClCompile Include="Graphics\UI\TextEntryPanel.cpp" />
+    <ClCompile Include="Graphics\UI\TextPanel.cpp" />
+    <ClCompile Include="Graphics\UI\VerticalContainerWidget.cpp" />
+    <ClCompile Include="Graphics\UI\Widget.cpp" />
+    <ClCompile Include="Graphics\Window.cpp" />
+    <ClCompile Include="Graphics\Material.cpp" />
+    <ClCompile Include="Graphics\Renderer.cpp" />
+    <ClCompile Include="Graphics\GraphicsUtils.cpp" />
+    <ClCompile Include="Graphics\Texture.cpp" />
+    <ClCompile Include="IMGUI\imgui.cpp" />
+    <ClCompile Include="IMGUI\ImGuizmo.cpp" />
+    <ClCompile Include="IMGUI\imgui_demo.cpp" />
+    <ClCompile Include="IMGUI\imgui_draw.cpp" />
+    <ClCompile Include="IMGUI\imgui_impl_glfw.cpp" />
+    <ClCompile Include="IMGUI\imgui_impl_vulkan.cpp" />
+    <ClCompile Include="IMGUI\imgui_tables.cpp" />
+    <ClCompile Include="IMGUI\imgui_widgets.cpp" />
+    <ClCompile Include="Implementations.cpp" />
+    <ClCompile Include="Input\InputSystem.cpp" />
+    <ClCompile Include="IO\FileUtils.cpp" />
+    <ClCompile Include="Math\AABB2.cpp" />
+    <ClCompile Include="Math\AABB3.cpp" />
+    <ClCompile Include="Math\Disc.cpp" />
+    <ClCompile Include="Math\EulerAngles.cpp" />
+    <ClCompile Include="Math\FloatRange.cpp" />
+    <ClCompile Include="Math\Frustum.cpp" />
+    <ClCompile Include="Math\IntVec2.cpp" />
+    <ClCompile Include="Math\IntVec3.cpp" />
+    <ClCompile Include="Math\Mat4.cpp" />
+    <ClCompile Include="Math\MathUtils.cpp" />
+    <ClCompile Include="Math\OBB2.cpp" />
+    <ClCompile Include="Math\OBB3.cpp" />
+    <ClCompile Include="Math\Plane.cpp" />
+    <ClCompile Include="Math\Rotor2D.cpp" />
+    <ClCompile Include="Math\Rotor3D.cpp" />
+    <ClCompile Include="Math\Shape3D.cpp" />
+    <ClCompile Include="Math\Sphere.cpp" />
+    <ClCompile Include="Math\Vec2.cpp" />
+    <ClCompile Include="Math\Vec3.cpp" />
+    <ClCompile Include="Math\Vec4.cpp" />
+    <ClCompile Include="Resource\Engine.cpp" />
+    <ClCompile Include="Scene\Node.cpp" />
+    <ClCompile Include="Scene\SkeletalModel.cpp" />
+    <ClCompile Include="Scripting\LuaSystem.cpp" />
+    <ClCompile Include="Threads\JobExecutionGraph.cpp" />
+    <ClCompile Include="Threads\JobSystem.cpp" />
+    <ClCompile Include="Threads\JobWorkerThread.cpp" />
+    <ClCompile Include="Time\Clock.cpp" />
+    <ClCompile Include="Time\Timer.cpp" />
+    <ClCompile Include="Time\TimeUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Audio\AudioEvent.hpp" />
+    <ClInclude Include="Audio\AudioListener.hpp" />
+    <ClInclude Include="Audio\AudioSystem.hpp" />
+    <ClInclude Include="Audio\ChannelGroup.hpp" />
+    <ClInclude Include="Audio\Sound.hpp" />
+    <ClInclude Include="Audio\SoundPlayback.hpp" />
+    <ClInclude Include="Core\BufferReader.hpp" />
+    <ClInclude Include="Core\Command.hpp" />
+    <ClInclude Include="Core\Common.hpp" />
+    <ClInclude Include="Core\DevConsole.hpp" />
+    <ClInclude Include="Core\EventDispatcher.hpp" />
+    <ClInclude Include="Core\FillList.hpp" />
+    <ClInclude Include="Core\GrowBuffer.hpp" />
+    <ClInclude Include="Core\HCIString.hpp" />
+    <ClInclude Include="Core\NamedProperties.hpp" />
+    <ClInclude Include="Core\Result.hpp" />
+    <ClInclude Include="Core\StringUtils.hpp" />
+    <ClInclude Include="Engine.hpp" />
+    <ClInclude Include="Graphics\AnimationStateMachine.hpp" />
+    <ClInclude Include="Graphics\Camera.hpp" />
+    <ClInclude Include="Graphics\BitmapFontSystem.hpp" />
+    <ClInclude Include="Graphics\DirectionalLight.hpp" />
+    <ClInclude Include="Graphics\GPUMesh\MeshBase.hpp" />
+    <ClInclude Include="Graphics\Mesh.hpp" />
+    <ClInclude Include="Graphics\Painters\Painter.hpp" />
+    <ClInclude Include="Graphics\PipelineBuilder.hpp" />
+    <ClInclude Include="Graphics\Rgba8.hpp" />
+    <ClInclude Include="Graphics\Animation.hpp" />
+    <ClInclude Include="Graphics\CascadeShadowMap.hpp" />
+    <ClInclude Include="Graphics\TextureAtlas.hpp" />
+    <ClInclude Include="Graphics\UI\DevConsoleGUI.hpp" />
+    <ClInclude Include="Graphics\UI\ImagePanel.hpp" />
+    <ClInclude Include="Graphics\UI\TextEntryPanel.hpp" />
+    <ClInclude Include="Graphics\UI\TextPanel.hpp" />
+    <ClInclude Include="Graphics\UI\Theme.hpp" />
+    <ClInclude Include="Graphics\Painters\NineSlice.hpp" />
+    <ClInclude Include="Graphics\UI\Canvas.hpp" />
+    <ClInclude Include="Graphics\UI\Panel.hpp" />
+    <ClInclude Include="Graphics\UI\VerticalContainerWidget.hpp" />
+    <ClInclude Include="Graphics\UI\Widget.hpp" />
+    <ClInclude Include="Graphics\Window.hpp" />
+    <ClInclude Include="Graphics\GPUBuffer.hpp" />
+    <ClInclude Include="Graphics\Material.hpp" />
+    <ClInclude Include="Graphics\QueueFamilyIndices.hpp" />
+    <ClInclude Include="Graphics\SwapChainSupportDetails.hpp" />
+    <ClInclude Include="Graphics\Texture.hpp" />
+    <ClInclude Include="Graphics\Renderer.hpp" />
+    <ClInclude Include="Graphics\GraphicsUtils.hpp" />
+    <ClInclude Include="Input\InputAction.hpp" />
+    <ClInclude Include="Input\InputActionContext.hpp" />
+    <ClInclude Include="Input\InputSystem.hpp" />
+    <ClInclude Include="Input\KeyCodes.hpp" />
+    <ClInclude Include="IO\FileUtils.hpp" />
+    <ClInclude Include="Math\AABB2.hpp" />
+    <ClInclude Include="Math\AABB3.hpp" />
+    <ClInclude Include="Math\AxisAngle.hpp" />
+    <ClInclude Include="Math\CollisionResult3D.hpp" />
+    <ClInclude Include="Math\Disc.hpp" />
+    <ClInclude Include="Math\EulerAngles.hpp" />
+    <ClInclude Include="Math\FloatRange.hpp" />
+    <ClInclude Include="Math\Frustum.hpp" />
+    <ClInclude Include="Math\HitResult3D.hpp" />
+    <ClInclude Include="Math\IntVec2.hpp" />
+    <ClInclude Include="Math\IntVec3.hpp" />
+    <ClInclude Include="Math\Mat4.hpp" />
+    <ClInclude Include="Math\MathUtils.hpp" />
+    <ClInclude Include="Math\OBB2.hpp" />
+    <ClInclude Include="Math\OBB3.hpp" />
+    <ClInclude Include="Math\Plane.hpp" />
+    <ClInclude Include="Math\Rotor2D.hpp" />
+    <ClInclude Include="Math\Rotor3D.hpp" />
+    <ClInclude Include="Math\RaycastResult3D.hpp" />
+    <ClInclude Include="Math\Shape3D.hpp" />
+    <ClInclude Include="Math\Sphere.hpp" />
+    <ClInclude Include="Math\Vec2.hpp" />
+    <ClInclude Include="Math\Vec3.hpp" />
+    <ClInclude Include="Math\Vec4.hpp" />
+    <ClInclude Include="Net\NetClientInterface.hpp" />
+    <ClInclude Include="Net\NetCommon.hpp" />
+    <ClInclude Include="Net\NetConnection.hpp" />
+    <ClInclude Include="Net\NetMessage.hpp" />
+    <ClInclude Include="Net\NetServerInterface.hpp" />
+    <ClInclude Include="Net\NetSystem.hpp" />
+    <ClInclude Include="Scene\Node.hpp" />
+    <ClInclude Include="Scene\SkeletalModel.hpp" />
+    <ClInclude Include="Scripting\LuaSystem.hpp" />
+    <ClInclude Include="Scripting\LuaWrapper.hpp" />
+    <ClInclude Include="Threads\AtomicQueue.hpp" />
+    <ClInclude Include="Threads\atomic_vector.hpp" />
+    <ClInclude Include="Threads\JobExecutionGraph.hpp" />
+    <ClInclude Include="Threads\Job.hpp" />
+    <ClInclude Include="Threads\JobSystem.hpp" />
+    <ClInclude Include="Threads\JobWorkerThread.hpp" />
+    <ClInclude Include="Time\Clock.hpp" />
+    <ClInclude Include="Time\Timer.hpp" />
+    <ClInclude Include="Time\TimeUtils.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c1c9f559-7376-4c88-ae83-0daa00a8d70b}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\ThirdParty;$(IncludePath)</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <PublicIncludeDirectories>$(SolutionDir)\Code;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)../../Libs;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\ThirdParty;$(IncludePath)</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <PublicIncludeDirectories>$(SolutionDir)\Code;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)../../Libs;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|Win32'">
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\ThirdParty;$(IncludePath)</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <PublicIncludeDirectories>$(SolutionDir)\Code;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)../../Libs;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|Win32'">
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\ThirdParty;$(IncludePath)</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <PublicIncludeDirectories>$(SolutionDir)\Code;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)../../Libs;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\ThirdParty;$(IncludePath)</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <ExternalIncludePath>$(ExternalIncludePath);</ExternalIncludePath>
+    <PublicIncludeDirectories>$(SolutionDir)\Code;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)../../Libs;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\ThirdParty;$(IncludePath)</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <ExternalIncludePath>$(ExternalIncludePath);</ExternalIncludePath>
+    <PublicIncludeDirectories>$(SolutionDir)\Code;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)../../Libs;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|x64'">
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\ThirdParty;$(IncludePath)</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <ExternalIncludePath>$(ExternalIncludePath);</ExternalIncludePath>
+    <PublicIncludeDirectories>$(SolutionDir)\Code;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)../../Libs;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|x64'">
+    <IncludePath>$(ProjectDir)..;$(ProjectDir)..\ThirdParty;$(IncludePath)</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <ExternalIncludePath>$(ExternalIncludePath);</ExternalIncludePath>
+    <PublicIncludeDirectories>$(SolutionDir)\Code;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)../../Libs;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN_WIN32_WINNT=0x0601</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN_WIN32_WINNT=0x0601</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN_WIN32_WINNT=0x0601</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN_WIN32_WINNT=0x0601</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
