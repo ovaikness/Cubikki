@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Cubikki_Client|Win32">
+      <Configuration>Cubikki_Client</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Cubikki_Client|x64">
+      <Configuration>Cubikki_Client</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Cubikki_Server|Win32">
+      <Configuration>Cubikki_Server</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Cubikki_Server|x64">
+      <Configuration>Cubikki_Server</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{cbe045bc-d47d-472b-85b8-ad748ab5ddc6}</ProjectGuid>
+    <RootNamespace>Cubikki</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\Build\</OutDir>
+    <IncludePath>$(ProjectDir)..;$(SolutionDir)../PotBlock Engine/Code/ThirdParty;$(SolutionDir)../PotBlock Engine/Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../PotBlock Engine/Libs/;$(SolutionDir)../PotBlock Engine/Build/;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\Build\</OutDir>
+    <IncludePath>$(ProjectDir)..;$(SolutionDir)../PotBlock Engine/Code/ThirdParty;$(SolutionDir)../PotBlock Engine/Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../PotBlock Engine/Libs/;$(SolutionDir)../PotBlock Engine/Build/;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|Win32'">
+    <OutDir>$(SolutionDir)\Build\</OutDir>
+    <IncludePath>$(ProjectDir)..;$(SolutionDir)../PotBlock Engine/Code/ThirdParty;$(SolutionDir)../PotBlock Engine/Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../PotBlock Engine/Libs/;$(SolutionDir)../PotBlock Engine/Build/;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|Win32'">
+    <OutDir>$(SolutionDir)\Build\</OutDir>
+    <IncludePath>$(ProjectDir)..;$(SolutionDir)../PotBlock Engine/Code/ThirdParty;$(SolutionDir)../PotBlock Engine/Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../PotBlock Engine/Libs/;$(SolutionDir)../PotBlock Engine/Build/;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\Build\</OutDir>
+    <IncludePath>$(ProjectDir)..;$(SolutionDir)../PotBlock Engine/Code/ThirdParty;$(SolutionDir)../PotBlock Engine/Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../PotBlock Engine/Libs/;$(SolutionDir)../PotBlock Engine/Build/;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\Build\</OutDir>
+    <IncludePath>$(ProjectDir)..;$(SolutionDir)../PotBlock Engine/Code/ThirdParty;$(SolutionDir)../PotBlock Engine/Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../PotBlock Engine/Libs/;$(SolutionDir)../PotBlock Engine/Build/;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|x64'">
+    <OutDir>$(SolutionDir)\Build\</OutDir>
+    <IncludePath>$(ProjectDir)..;$(SolutionDir)../PotBlock Engine/Code/ThirdParty;$(SolutionDir)../PotBlock Engine/Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../PotBlock Engine/Libs/;$(SolutionDir)../PotBlock Engine/Build/;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|x64'">
+    <OutDir>$(SolutionDir)\Build\</OutDir>
+    <IncludePath>$(ProjectDir)..;$(SolutionDir)../PotBlock Engine/Code/ThirdParty;$(SolutionDir)../PotBlock Engine/Code;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../PotBlock Engine/Libs/;$(SolutionDir)../PotBlock Engine/Build/;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)\Temporary\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN.</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>"$(SolutionDir)../PotBlock Engine/Libs/*.lib" "$(SolutionDir)../PotBlock Engine/LibsD/*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Engine_$(Platform)_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)\Build\" mkdir "$(SolutionDir)\Build\"
+xcopy "$(SolutionDir)..\PotBlock Engine\Build\Engine_$(Platform)_$(Configuration).pdb" "$(SolutionDir)\Build\" /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN.</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>"$(SolutionDir)../PotBlock Engine/Libs/*.lib" "$(SolutionDir)../PotBlock Engine/LibsR/*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Engine_$(Platform)_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)\Build\" mkdir "$(SolutionDir)\Build\"
+xcopy "$(SolutionDir)..\PotBlock Engine\Build\Engine_$(Platform)_$(Configuration).pdb" "$(SolutionDir)\Build\" /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN.</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>"$(SolutionDir)../PotBlock Engine/Libs/*.lib" "$(SolutionDir)../PotBlock Engine/LibsR/*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Engine_$(Platform)_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)\Build\" mkdir "$(SolutionDir)\Build\"
+xcopy "$(SolutionDir)..\PotBlock Engine\Build\Engine_$(Platform)_$(Configuration).pdb" "$(SolutionDir)\Build\" /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN.</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>"$(SolutionDir)../PotBlock Engine/Libs/*.lib" "$(SolutionDir)../PotBlock Engine/LibsR/*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Engine_$(Platform)_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)\Build\" mkdir "$(SolutionDir)\Build\"
+xcopy "$(SolutionDir)..\PotBlock Engine\Build\Engine_$(Platform)_$(Configuration).pdb" "$(SolutionDir)\Build\" /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions);WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>"$(SolutionDir)../PotBlock Engine/Libs/*.lib" "$(SolutionDir)../PotBlock Engine/LibsD/*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Engine_$(Platform)_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)\Build\" mkdir "$(SolutionDir)\Build\"
+xcopy "$(SolutionDir)..\PotBlock Engine\Build\Engine_$(Platform)_$(Configuration).pdb" "$(SolutionDir)\Build\" /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions);WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>"$(SolutionDir)../PotBlock Engine/Libs/*.lib" "$(SolutionDir)../PotBlock Engine/LibsR/*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Engine_$(Platform)_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)\Build\" mkdir "$(SolutionDir)\Build\"
+xcopy "$(SolutionDir)..\PotBlock Engine\Build\Engine_$(Platform)_$(Configuration).pdb" "$(SolutionDir)\Build\" /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Client|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_WIN32_WINNT=0x0601;_CLIENT;%(PreprocessorDefinitions);WIN32_LEAN_AND_MEAN.</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>"$(SolutionDir)../PotBlock Engine/Libs/*.lib" "$(SolutionDir)../PotBlock Engine/LibsR/*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Engine_$(Platform)_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)\Build\" mkdir "$(SolutionDir)\Build\"
+xcopy "$(SolutionDir)..\PotBlock Engine\Build\Engine_$(Platform)_$(Configuration).pdb" "$(SolutionDir)\Build\" /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Cubikki_Server|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_WIN32_WINNT=0x0601;_SERVER;%(PreprocessorDefinitions);WIN32_LEAN_AND_MEAN.</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>"$(SolutionDir)../PotBlock Engine/Libs/*.lib" "$(SolutionDir)../PotBlock Engine/LibsR/*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Engine_$(Platform)_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)\Build\" mkdir "$(SolutionDir)\Build\"
+xcopy "$(SolutionDir)..\PotBlock Engine\Build\Engine_$(Platform)_$(Configuration).pdb" "$(SolutionDir)\Build\" /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Actors\Actor.cpp" />
+    <ClCompile Include="Actors\ActorClasses\ACharacter.cpp" />
+    <ClCompile Include="Actors\ActorClasses\AController.cpp" />
+    <ClCompile Include="Actors\ActorClasses\AFlyCam.cpp" />
+    <ClCompile Include="Actors\ActorClasses\APawn.cpp" />
+    <ClCompile Include="Actors\ActorClasses\APlayer.cpp" />
+    <ClCompile Include="Actors\ActorClasses\APlayerController.cpp" />
+    <ClCompile Include="Actors\ActorSystem.cpp" />
+    <ClCompile Include="Actors\ActorUtils.cpp" />
+    <ClCompile Include="Actors\Component\ComponentReference.cpp" />
+    <ClCompile Include="Actors\Component\SkeletalModelComponent.cpp" />
+    <ClCompile Include="Actors\Component\TransformComponent.cpp" />
+    <ClCompile Include="Actors\GameTag\GameTagCollection.cpp" />
+    <ClCompile Include="Actors\GameTag\GameTagLibrary.cpp" />
+    <ClCompile Include="Blocks\BlockCommon.cpp" />
+    <ClCompile Include="Blocks\BlockIterator.cpp" />
+    <ClCompile Include="Blocks\BlockStorage.cpp" />
+    <ClCompile Include="Blocks\BlockWorld.cpp" />
+    <ClCompile Include="Blocks\Chunk.cpp" />
+    <ClCompile Include="Blocks\ChunkRegion.cpp" />
+    <ClCompile Include="Blocks\ChunkTable.cpp" />
+    <ClCompile Include="Blocks\Physics\BlockPhysicsBody.cpp" />
+    <ClCompile Include="Blocks\Physics\BlockPhysicsWorld.cpp" />
+    <ClCompile Include="Blocks\WorldGen\FlatWorldGenerator.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Game\GMClientGame.cpp" />
+    <ClCompile Include="Game\GMMenu.cpp" />
+    <ClCompile Include="Game\GMHostGame.cpp" />
+    <ClCompile Include="Game\Inventory\Inventory.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Net\CubikkiClient.cpp" />
+    <ClCompile Include="Net\CubikkiServer.cpp" />
+    <ClCompile Include="Net\RemoteEventUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actors\Actor.hpp" />
+    <ClInclude Include="Actors\ActorClasses\ACharacter.hpp" />
+    <ClInclude Include="Actors\ActorClasses\AController.hpp" />
+    <ClInclude Include="Actors\ActorClasses\APawn.hpp" />
+    <ClInclude Include="Actors\ActorClasses\AFlyCam.hpp" />
+    <ClInclude Include="Actors\ActorClasses\APlayer.hpp" />
+    <ClInclude Include="Actors\ActorClasses\APlayerController.hpp" />
+    <ClInclude Include="Actors\ActorDef.hpp" />
+    <ClInclude Include="Actors\ActorSystem.hpp" />
+    <ClInclude Include="Actors\ActorType.hpp" />
+    <ClInclude Include="Actors\ActorUID.hpp" />
+    <ClInclude Include="Actors\ActorUtils.hpp" />
+    <ClInclude Include="Actors\Component\Component.hpp" />
+    <ClInclude Include="Actors\Component\ComponentList.hpp" />
+    <ClInclude Include="Actors\Component\ComponentReference.hpp" />
+    <ClInclude Include="Actors\Component\ComponentSystem.hpp" />
+    <ClInclude Include="Actors\Component\ComponentUID.hpp" />
+    <ClInclude Include="Actors\Component\SkeletalModelComponent.hpp" />
+    <ClInclude Include="Actors\Component\TransformComponent.hpp" />
+    <ClInclude Include="Actors\GameTag\GameTagCollection.hpp" />
+    <ClInclude Include="Actors\GameTag\GameTagLibrary.hpp" />
+    <ClInclude Include="Actors\GameTag\GameTagToken.hpp" />
+    <ClInclude Include="Blocks\BlockCommon.hpp" />
+    <ClInclude Include="Blocks\BlockDef.hpp" />
+    <ClInclude Include="Blocks\BlockIterator.hpp" />
+    <ClInclude Include="Blocks\Block.hpp" />
+    <ClInclude Include="Blocks\BlockLight.hpp" />
+    <ClInclude Include="Blocks\BlockStorage.hpp" />
+    <ClInclude Include="Blocks\BlockWorld.hpp" />
+    <ClInclude Include="Blocks\Chunk.hpp" />
+    <ClInclude Include="Blocks\ChunkMesh.hpp" />
+    <ClInclude Include="Blocks\ChunkRegion.hpp" />
+    <ClInclude Include="Blocks\ChunkTable.hpp" />
+    <ClInclude Include="Blocks\Physics\BlockPhysicsBody.hpp" />
+    <ClInclude Include="Blocks\Physics\BlockPhysicsWorld.hpp" />
+    <ClInclude Include="Blocks\WorldGenerator.hpp" />
+    <ClInclude Include="Blocks\WorldGen\FlatWorldGenerator.hpp" />
+    <ClInclude Include="App.hpp" />
+    <ClInclude Include="Common.hpp" />
+    <ClInclude Include="Game\Game.hpp" />
+    <ClInclude Include="Game\GameMode.hpp" />
+    <ClInclude Include="Game\GMClientGame.hpp" />
+    <ClInclude Include="Game\GMMenu.hpp" />
+    <ClInclude Include="Game\GMHostGame.hpp" />
+    <ClInclude Include="Game\Inventory\Inventory.hpp" />
+    <ClInclude Include="Game\Inventory\ItemDef.hpp" />
+    <ClInclude Include="Game\Inventory\ItemStack.hpp" />
+    <ClInclude Include="Net\CubikkiClient.hpp" />
+    <ClInclude Include="Net\CubikkiMessage.hpp" />
+    <ClInclude Include="Net\CubikkiServer.hpp" />
+    <ClInclude Include="Net\RemoteEventUtils.hpp" />
+    <ClInclude Include="ResourceUtils.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

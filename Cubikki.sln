@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cubikki", "Code\Cubikki\Cubikki.vcxproj", "{CBE045BC-D47D-472B-85B8-AD748AB5DDC6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C1C9F559-7376-4C88-AE83-0DAA00A8D70B} = {C1C9F559-7376-4C88-AE83-0DAA00A8D70B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "..\PotBlock Engine\Code\Engine\Engine.vcxproj", "{C1C9F559-7376-4C88-AE83-0DAA00A8D70B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBE045BC-D47D-472B-85B8-AD748AB5DDC6}.Debug|x64.ActiveCfg = Debug|x64
+		{CBE045BC-D47D-472B-85B8-AD748AB5DDC6}.Debug|x64.Build.0 = Debug|x64
+		{CBE045BC-D47D-472B-85B8-AD748AB5DDC6}.Release|x64.ActiveCfg = Release|x64
+		{CBE045BC-D47D-472B-85B8-AD748AB5DDC6}.Release|x64.Build.0 = Release|x64
+		{C1C9F559-7376-4C88-AE83-0DAA00A8D70B}.Debug|x64.ActiveCfg = Debug|x64
+		{C1C9F559-7376-4C88-AE83-0DAA00A8D70B}.Debug|x64.Build.0 = Debug|x64
+		{C1C9F559-7376-4C88-AE83-0DAA00A8D70B}.Release|x64.ActiveCfg = Release|x64
+		{C1C9F559-7376-4C88-AE83-0DAA00A8D70B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7C0B4FD-1CEE-4A62-BA30-067551619402}
+	EndGlobalSection
+EndGlobal
